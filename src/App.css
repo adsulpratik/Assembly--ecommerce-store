@@ -1,0 +1,273 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.lineHover {
+    position: relative;
+}
+
+.underline1,
+.underline2,
+.underline3,
+.underline4,
+.underline5,
+.underline6 {
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+    height: 3px;
+    background-color: black;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 0.7s ease, opacity 0.7s ease, visibility 0.7s ease;
+}
+
+.lineHover:hover .underline1 {
+    width: 50px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.lineHover:hover .underline2 {
+    width: 40px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.lineHover:hover .underline3 {
+    width: 75px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.lineHover:hover .underline4 {
+    width: 145px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.lineHover:hover .underline5 {
+    width: 35px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.lineHover:hover .underline6 {
+    width: 45px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn {
+    position: relative;
+    background: linear-gradient(to right, white 50%, rgb(141, 48, 53) 50%);
+    background-size: 201% 100%;
+    background-position: right bottom;
+    color: white;
+    border: 2px solid rgb(141, 48, 53);
+    cursor: pointer;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-position: left bottom;
+    color: rgb(141, 48, 53);
+}
+
+.sepline {
+    width: 100vw;
+    height: 0.5px;
+    background-color: grey;
+    margin-top: 60px;
+}
+
+.parentCard {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    cursor: grab;
+}
+
+.parentCard:active {
+    cursor: grabbing;
+}
+
+.Card {
+    flex: 0 0 auto;
+    height: 500px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 13px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.Card:hover {
+    transform: translateY(-5px);
+}
+
+.imgdiv1 {
+    height: 370px;
+    width: 100%;
+    border-radius: 13px 13px 0 0;
+    overflow: hidden;
+}
+
+.cardimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    height: 70px;
+    overflow: hidden;
+}
+
+.childinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+}
+
+.childinfo p:last-child {
+    color: rgb(141, 48, 53);
+    font-weight: 600;
+}
+
+.Page2img {
+    height: 250px;
+    cursor: pointer;
+}
+.scrolling-banner {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    background: #f9f9f9;
+    background-color: teal;
+    padding-bottom: 15px;
+  }
+
+  .scrolling-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 50s linear infinite;
+  }
+
+  .scrolling-content span {
+    display: inline-block;
+    margin: 0 5rem; 
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  @keyframes scroll-left {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  
+.sepline1 {
+    width: 90vw;
+    height: 0.5px;
+    background-color: grey;
+    margin-top: 60px;
+}
+.card1{
+    transition: ease-in-out 0.5s;
+}
+.Page6{
+    background-color: bisque;
+}
+.customclass {
+  background-color: rgba(255, 255, 255, 0.1);  
+  border-radius: 8px;
+  padding: 0px 6px;
+  font-weight: 600;             
+  box-shadow: 0 0 8px rgba(62, 72, 72, 0.3);  
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+.specific{
+    background-color: bisque;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+    padding: 10px;
+}
+.scard{
+    padding: 10px;
+    height: fit-content;
+}
+.scard img{
+    border-radius: 10px;
+}
+.scard h2{
+    font-size: 20px;
+    font-weight: bolder
+}
+.scard p{
+    font-weight: 700;
+}
+
+
+
+.btn1 {
+    position: absolute;
+    background: linear-gradient(to right, white 50%, rgb(141, 48, 53) 50%);
+    background-size: 201% 100%;
+    background-position: right bottom;
+    color: white;
+    border: 2px solid rgb(141, 48, 53);
+    cursor: pointer;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.btn1:hover {
+    background-position: left bottom;
+    color: rgb(141, 48, 53);
+}
+.btn2{
+padding-inline: 24px;
+}
+.pinbtn{
+    transition: .4s;
+}
+.pinbtn:hover{
+    box-shadow: 0 0 7px gray ;
+}
+.endpara{
+    word-spacing: 10px;
+}
